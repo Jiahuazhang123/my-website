@@ -1,0 +1,311 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0;
+    margin-left: 80px;
+    max-width: 1200px;
+}
+
+.profile img {
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.description {
+    flex: 1;
+    margin-right: 60px;
+}
+
+.team-members .member {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    text-align: center;
+}
+
+.team-members .member:last-child {
+    margin-right: 0;
+}
+
+.team-members .member img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+body > h1:first-of-type {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+
+/* 确保两个部分之间的间距一致 */
+#course-responsible,
+#teacher-team {
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.team-members {
+    margin-left: 50px;
+}
+
+/* 统一所有 section 的样式 */
+section {
+    margin-top: 40px;
+    padding-left: 20px;  /* 所有section统一的左侧内边距 */
+}
+
+/* 统一所有 h2 标题的样式 */
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding-left: 30px;  /* 所有标题统一的左侧内边距 */
+    font-weight: normal;
+}
+
+/* 确保所有 section 的间距一致 */
+#course-responsible,
+#teacher-team,
+#course-introduction {
+    margin-top: 40px;  /* 统一上边距 */
+    padding-left: 20px;  /* 统一的左侧内边距 */
+}
+
+.course-content {
+    padding-left: 50px;  /* 与其他内容保持一致的左侧距离 */
+    padding-right: 50px; /* 右侧留白 */
+    line-height: 1.8;    /* 行间距 */
+}
+
+.course-content p {
+    margin-bottom: 20px;  /* 段落间距 */
+    text-indent: 2em;     /* 段落首行缩进 */
+}
+
+.course-content ul {
+    margin-left: 2em;     /* 列表左侧缩进 */
+    margin-top: 20px;     /* 列表上方间距 */
+}
+
+.course-content li {
+    margin-bottom: 10px;  /* 列表项间距 */
+}
+
+/* 调整附件文本的样式 */
+.content {
+    padding-left: 80px;  /* 附件文本的左侧缩进 */
+}
+
+.content p {
+    margin-bottom: 15px;
+    color: #333;  /* 可选：设置文字颜色 */
+}
+
+.member p {
+    font-weight: bold;           /* 文字加粗 */
+    color: #0066cc;             /* 蓝色文字，以根据需要调整颜色值 */
+    margin-top: 10px;           /* 与图片保持一定距离 */
+    font-size: 16px;            /* 可以根据需要调整字体大小 */
+}
+
+/* 附件链接的样式 */
+.content {
+    padding-left: 80px;  /* 附件文本的左侧缩进 */
+}
+
+.content p a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content p a:hover {
+    text-decoration: underline;
+    color: #003399;
+}
+
+/* 弹出框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.modal-content h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.modal-content p {
+    margin: 10px 0;
+    color: #666;
+}
+
+/* 调整后四个标题的间距 */
+#teaching-outline,
+#teaching-plan,
+#homework,
+#lab-guide {
+    margin-top: 5px;  /* 将原来的 40px 改为 20px */
+}
+
+/* 如果需要更小的间距，可以进一步减小数值 */
+#teaching-outline h2,
+#teaching-plan h2,
+#homework h2,
+#lab-guide h2 {
+    margin-bottom: 5px;  /* 将原来的 20px 改为 10px */
+}
+
+/* 确保附件链接的位置也相应调整 */
+.content {
+    padding-left: 80px;
+    margin-top: 1px;  /* 可以添加这行来减少与标题的距离 */
+}
+
+/* 容器样式 */
+.content-with-qr {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: flex-start; */
+    position: relative;
+}
+
+/* 左侧内容样式 */
+.left-content {
+    flex: 1;
+}
+
+/* 二维码容器样式 */
+.qr-codes-container {
+    position: absolute; /* 使用绝对定位 */
+    left: 300px; /* 调整这个值来向左移动二维码 */
+    top: 0; /* 确保二维码容器在顶部对齐 */
+    width: 500px;
+}
+
+/* 二维码行样式 */
+.qr-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;  /* 上下两行之间的间距 */
+}
+
+/* 单个二维码样式 */
+.qr-code {
+    width: 240px;  /* 原来是 120px，放大一倍 */
+    text-align: center;
+    margin: 0 20px;  /* 原来是 10px */
+}
+
+.qr-code img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.qr-code p {
+    font-size: 14px;  /* 原来是 12px，适当增加字体大小 */
+    color: #666;
+    margin: 0;
+}
+
+/* 统一标题四到八的样式 */
+#teaching-outline,
+#teaching-plan,
+#homework,
+#lab-guide,
+#reference-books {
+    margin-top: 20px;
+}
+
+/* 统一所有标题的样式 */
+section h2 {
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+/* 参考教材列表样式 */
+.content ol {
+    margin-left: 80px;  /* 与其他内容保持一致的左侧缩进 */
+    line-height: 1.6;   /* 行间距 */
+}
+
+.content ol li {
+    margin-bottom: 8px;  /* 列表项之间的间距 */
+}
+
+.header-background {
+    position: relative; /* 使子元素可以使用绝对定位 */
+    width: 100%; /* 确保容器宽度为100% */
+    overflow: hidden; /* 确保图片不会超出容器 */
+}
+
+.header-background img {
+    width: 100%; /* 图片宽度与容器一致 */
+    height: auto; /* 保持图片比例 */
+    display: block; /* 移除底部空白 */
+}
+
+.header-background h1 {
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 使元素中心对齐 */
+    color: white; /* 设置文字颜色，确保在图片上可见 */
+    font-size: 2em; /* 根据需要调整字体大小 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影以提高可读性 */
+    margin: 0; /* 移除默认的外边距 */
+    padding: 0; /* 移除默认的内边距 */
+}
